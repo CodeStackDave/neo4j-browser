@@ -1,0 +1,284 @@
+﻿@import "../varibles";
+
+// primary-background-color = #262626
+// primary-text = #ebebeb
+// secondary-background-color = #595959
+// secondary-text-color = #f4f4f4
+// tertiary-background-color = #383838
+// tertiary-text-color = #f4f4f4
+
+//DentonBETA2.ttf
+    @font-face {
+      font-family: 'DentonBETA2';
+          src:url("../fonts/DentonBETA2.eot");
+          src:url("../fonts/DentonBETA2.eot?#iefix") format("embedded-opentype"),
+            url("../fonts/DentonBETA2.woff") format("woff"),
+            url("../fonts/DentonBETA2.ttf") format("truetype"),
+            url("../fonts/DentonBETA2.svg#DentonBETA2") format("svg");
+          font-weight: normal;
+          font-style: normal;
+    }
+
+    @primary-background-color:	#ff6a00;
+    @primary-text :	#ff0000;
+    @primary-text-color :	#f4f4f4;
+    @secondary-background-color :	#ffffff;
+    @secondary-text-color :	#f4f4f4;
+    @tertiary-background-color :	#30333a;
+    @tertiary-text-color :	#179237;
+    @tertiary-background-hover :	#0026ff;
+    @tertiary-text-hover :	#ff0000;
+    @color-link :	#f4f4f4;
+    @color-link-hover :	#ffffff;
+    @DxBackground: #ff0000;
+
+
+
+body {
+    #stream .frame .inner .view-result .view-result-graph .graph-holder {
+            background-color: #00ffff;
+    }
+
+     .code-bar {
+        background-color: #333333 !important;
+    }
+
+    #main {
+        article.guide,article.help, pre {
+            color: #f4f4f4;
+            background-color: #292D31 !important;
+        }
+        background-color: #1B2022 !important;
+    }
+    .form-control:focus {
+        border-color: #f4f4f4;
+        border-top-color: #C18922;
+        border-right-color: #C18922;
+        border-bottom-color: #C18922;
+        border-left-color: #C18922;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #E9A813;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #E9A813;
+    }
+
+    .carousel-indicators-wrapper .carousel-indicators li.active {
+        background-color: #C18922 !important;
+        border: 1em solid #292D31 !important;
+    }
+    .carousel-indicators li {
+        border: 1em solid #E9A813 !important;
+        background-color: #333333 !important;
+    }
+    .scrollbar{
+        background-color: #C18922 !important;
+    }
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #333333;
+    -webkit-border-radius: 5em;
+    border-radius: 5em;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0em;
+    border-radius: 0em;
+    background: #E9A813;
+    -webkit-box-shadow: inset 0 0 6px #161616;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #E9A813;
+}
+::-webkit-scrollbar-track-piece{
+    background: #161616;
+    -webkit-box-shadow: inset 0 0 6px #161616;
+}
+/*
+body.theme-dark
+  font: 13px 'Helvetica Neue', Helvetica, Arial, sans-serif
+  background: primary-background-color
+  color: primary-text
+
+  a
+    color: color-link
+    &:hover
+      color: color-link-hover
+      text-decoration: none
+
+
+  #incompatible
+    background-color: #fff
+
+  table.json-object
+    background-color: #eee;
+    tbody
+      tr
+        background-color: transparent;
+        td, th
+          color: #666;
+
+  .status-bar-wrapper
+    display: none
+  .status-bar
+    color: rgb(120, 129, 133)
+    background-color: #FFF
+    .status
+
+    .popover.bottom
+      .arrow:after
+        border-bottom-color: #f7f7f7
+    .details
+      margin-top: -4px
+      margin-left: 12px
+    .updated-code
+      float:right
+      margin-right horizontal-padding
+    &.error
+      color: color-error
+    .fa-ok
+      color: color-success
+
+  .fullscreen-container
+    background-color: #fff
+    .code-bar
+      // darkened
+      background-color: secondary-background-color
+      .actions
+        display: none
+      a.close-fullscreen
+        color: #9B9DA2
+    a.fa-download
+      color: #9B9DA2
+    .result
+      background-color: #F8F9FB
+
+  .key.code
+    color: #eee
+
+  //
+  // Bootstrap overrides
+  //////////////////////
+
+  .navbar-inverse .navbar-inner
+    background: linear-gradient(top, #333, #181818)
+
+  .navbar .brand
+    color: #fff
+
+  /////
+  .bg-warning
+    background-color: #635c36
+
+  #error
+    background-color: color-error
+    color: #fff
+  .connection-error
+    #error
+      display: block
+
+  #stream
+    .frame
+      .view-result .view-result-graph
+        background-color: tertiary-background-color
+
+      .code-bar
+        .code
+          color: secondary-text-color
+        background-color: secondary-background-color
+
+
+  #main
+    background-color: primary-background-color
+
+    .hero-unit
+      background-color: tertiary-background-color
+
+    article.guide, article.help, article.guide, pre
+      color: secondary-text-color
+      background-color: secondary-background-color
+      p
+        color: secondary-text-color
+      pre.code
+        color: tertiary-text-color
+        background-color: tertiary-background-color
+        &:hover
+          background-color: tertiary-background-hover
+          color: tertiary-text-hover
+
+    .intro
+      background: url(../images/intro.png) 50% 48% no-repeat
+
+    .view-editor
+      background-color: secondary-background-color
+      z-index: -1
+
+    footer
+      color: #A0AAB1
+
+  // CodeMirror overrides
+  .CodeMirror
+    z-index: 2
+    &.cm-s-neo, &.cm-s-css
+      color: red
+      .cm-comment
+        color: #C0C4CA
+      .cm-keyword, .cm-property
+        color: #3498DB
+      .cm-atom, .cm-number
+        color: #9B59B6
+      .cm-node, .cm-tag
+        color: #E74C3C
+      .cm-string
+        color: #E67E22
+      .cm-variable, .cm-qualifier
+        color: #1ABC9C
+  #editor
+    ul.controls
+      a.circled
+        color: #858585
+        &.active
+          color: #cecece
+          &.play
+            &:hover
+              color: #cecece
+          &.favorites
+            &.enabled, &.enabled:hover
+              color: color-favorites
+            &.changed
+              color: color-favorites
+            &:hover
+              color: #cecece
+          &.delete
+            &:hover
+              color: #cecece
+    .CodeMirror
+      background-color: tertiary-background-color
+      pre
+        background-color: tertiary-background-color
+        z-index: -1
+      .CodeMirror-placeholder
+        color: #E0E2E6
+      .CodeMirror-lines
+      .CodeMirror-gutters
+      .CodeMirror-linenumber
+        color: primary-text-color
+      .CodeMirror-code
+        color: primary-text-color
+      div.CodeMirror-cursor
+        border-left: 11px solid yellow
+        opacity: 0.5
+    .prompt
+      color: primary-text-color
+    .disable-highlighting
+      .CodeMirror .CodeMirror-code *
+        color: primary-text-color
+  div.CodeMirror-selected
+    background-color: primary-text-color
+    opacity: 0.5
+    */

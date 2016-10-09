@@ -1,0 +1,5 @@
+I had to Install grunt - locally and globally
+
+decided to use less instead of stylus.
+
+I'd  eventually like to port to Angular 2.0

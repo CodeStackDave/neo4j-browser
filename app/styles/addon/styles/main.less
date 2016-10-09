@@ -1,0 +1,120 @@
+﻿@import "styles/DeusEx.less";
+@import "varibles.less";
+
+@font-face {
+  font-family: 'DentonBETA2';
+  src: url("..\..\..\fonts\DentonBETA2.ttf");
+}
+
+body {
+    #guide-title{
+        font-family: "DentonBETA2";
+        font-size: 2em;
+        margin: 1em;
+        font-weight: 300;
+        color: @Dx1 !important;
+        font-weight: bold;
+        text-shadow:
+            0.05em 0.05em 0.1em #000000;
+    }
+    .guide {
+        font-family :    "DentonBETA2";
+        font-size: 0.1em;
+        line-height: 0.12rem;
+        font-weight: 300;
+        color: @DxEmailHeader;
+        /*
+        text-shadow:
+            -0.05em -0.05em 0.05em @Dx5,
+            0.05em -0.05em 0.05em @Dx5,
+            -0.05em 0.05em 0.05em @Dx5,
+            0.05em 0.05em 0.05em @Dx5,
+            0.05em 0.05em 0.05em #000000;
+            */
+        //#23282A
+               .flexcroll{
+                    scrollbar-face-color: #E7A410;
+                    scrollbar-shadow-color: #FFFFFF;
+                    scrollbar-highlight-color: #FFFFFF;
+                    scrollbar-3dlight-color: #FFFFFF;
+                    scrollbar-darkshadow-color: #FFFFFF;
+                    scrollbar-track-color: #FFFFFF;
+                    scrollbar-arrow-color: #FFFFFF;
+                    resize: none;
+                }
+
+                .flexcroll::-webkit-scrollbar {
+                    width: 10px;
+                }
+
+                .flexcroll::-webkit-scrollbar-track {
+                    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                    -webkit-border-radius: 0px;
+                    border-radius: 0px;
+                }
+
+                .flexcroll::-webkit-scrollbar-thumb {
+                    -webkit-border-radius: 0px;
+                    border-radius: 0px;
+                    background: rgba(255, 249, 0, 0.6);
+                    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+                }
+
+
+
+
+                button{ min-width:10px;
+                    position: absolute;
+                    top: 10.9px;
+                }
+                .glyphicon{
+                    top: 20.9px;
+                }
+                #deus-title{
+                    //Title Header
+                    color: @Dx1;
+                    //font-family: Monaco,"Courier New",Terminal,monospace;
+                    font-weight: bold;
+                    text-shadow:
+                        0.05em 0.05em 0.1em #000000;
+                }
+                #form-control, .form-control{
+                    //background-color: #30333a;
+                    background-color: #333333;
+                    color: @matrix1;
+                    font-family: @fontStyle1;
+                    font-size: 10em;
+                }
+                label{
+                    font-family: @fontStyle1;
+                    font-size: 12em;
+                    font-weight: bolder;
+                    color: @labelColor;
+                    line-height:30px;
+                }
+                input{
+                    background-color: #30333a;
+                    color: @matrix3;
+                    font-family: @fontStyle1;
+                    font-size: 16px;
+                }
+                #email-subject{
+                    color: @DxEmailHeader;
+                }
+                #email-body{
+                    color: @DxEmailHeader;
+                }
+                #myDiv{
+                    min-height:50px;
+                }
+                #btn_email{
+                    top: 100.9px;
+                }
+
+            }
+
+    #stream .frame .inner .view-result .view-result-graph .graph-holder {
+            background-color: @Dx2;
+    }
+
+}
